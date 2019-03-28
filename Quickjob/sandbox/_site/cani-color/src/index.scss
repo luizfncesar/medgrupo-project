@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.background {
+	flex: 1 1 auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.foreground {
+	display: block;
+	font-size: 200px;
+	font-family: "Acropolis A", "Acropolis B";
+	margin: 50vh 30vh;
+	cursor: pointer;
+}

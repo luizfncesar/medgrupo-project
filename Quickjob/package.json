@@ -1,0 +1,43 @@
+{
+  "name": "quickjob",
+  "description": "Sistema de trabalho do front-end Inbrands para single pages",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Leonardo Favre",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "browser-sync": "^2.18.8",
+    "chokidar": "^1.6.1",
+    "compass-importer": "^0.4.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-compass": "^2.1.0",
+    "gulp-directory-sync": "^1.2.3",
+    "gulp-file": "^0.3.0",
+    "gulp-jsclosure": "0.0.1",
+    "gulp-modernizr": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.1.2",
+    "path": "^0.12.7",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "run-sequence": "^1.2.2",
+    "yargs": "^7.0.2"
+  },
+  "dependencies": {
+    "canivete": "github:leofavre/canivete",
+    "instafeed.js": "^1.4.1",
+    "lazysizes": "^3.0.0",
+    "lodash-es": "^4.17.4",
+    "photoswipe": "^4.1.2",
+    "swiper": "^3.4.2",
+    "zenscroll": "^4.0.0"
+  }
+}

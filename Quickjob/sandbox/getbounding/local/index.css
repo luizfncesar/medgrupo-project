@@ -1,0 +1,23 @@
+.main,
+.copy {
+  position: relative;
+  display: block;
+  background: rgba(153, 0, 153, 0.3); }
+
+.main {
+  margin: 5vw;
+  z-index: 5;
+  width: 200px;
+  height: 200px;
+  overflow: auto; }
+
+.inner {
+  display: block;
+  height: 600px;
+  border: 5px solid #000; }
+
+.copy {
+  position: fixed;
+  z-index: 2; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>Medgrupo</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header class="header header--medgrupo">
+		<h1 class="brand brand--medgrupo">Medgrupo</h1>
+	</header>
+	<nav class="menu menu--desafio-oi">
+		<section>
+			<h2>Main</h2>
+			<ul>
+				<li><a href="#">Main</a></li>
+				<li><a href="#">Slide de Aula</a></li>
+				<li><a href="#">Dúvidas Acadêmicas</a></li>
+				<li><a href="#">Contribuições</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Área de Treinamento</h2>
+			<ul>
+				<li><a href="#">Simulados</a></li>
+				<li><a href="#">Concursos da Íntegra</a></li>
+				<li><a href="#">Monta Provas</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Administrativo</h2>
+			<ul>
+				<li><a href="#">Financeiro</a></li>
+				<li><a href="#">Notas Fiscais</a></li>
+				<li><a href="#">Autorização ao Portador</a></li>
+			</ul>
+		</section>
+	</nav>
+
+	<section>
+		<!-- <article>
+			<div class="landing landing--desafio-oi">
+				<div class="landing__area">
+
+					<div class="front front--product" data-bind="style: { display: selection() == 'riodejaneiro' ? 'flex' : 'none' }">
+						<div class="front__title">Todas as nossa ofertas:</div>
+						<div class="swiper-container swiper-container--products">
+							<div class="swiper-wrapper" data-bind="template: { name: 'productsTemplateRJ', foreach: prodRJ, as: 'prodRJ' }"></div>
+						</div>
+						<div class="options options--desafio-oi" data-bind="foreach: pagesRJ">
+							<select class="options__area" multiple="true" height="12" data-bind="
+								options: totalPages,
+								value: $parents.selectionPages,
+								optionsText: $data,">
+							 	
+							 	<option class="options__radio" data-bind="text: $data, option: $data"></option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="front front--product front-2" data-bind="style: { display: selection() == 'saopaulo' ? 'flex' : 'none' }">
+						<div class="front__title">Todas as nossa ofertas:</div>
+						<div class="swiper-container swiper-container--products">
+							<div class="swiper-wrapper" data-bind="template: { name: 'productsTemplateSP', foreach: prodSP, as: 'prodSP' }"></div>
+						</div>
+					</div>
+					
+					<div class="front front--product front-3" data-bind="style: { display: selection() == 'todos' ? 'flex' : 'none' }">
+						<div class="front__title">Todas as nossa ofertas:</div>
+						<div class="swiper-container swiper-container--products">
+							<div class="swiper-wrapper" data-bind="template: { name: 'productsTemplateTodos', foreach: prodTodos, as: 'prodTodos' }"></div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</article> -->
+		<footer class="footer footer--desafio-oi">Todos os direitos reservados</footer>
+	</section>
+	<script type="text/javascript" src="static/swiper.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

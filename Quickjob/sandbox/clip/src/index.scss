@@ -1,0 +1,17 @@
+.parent {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	width: 100px;
+	height: 100px;
+	background: rgba(#909, 0.3);
+}
+
+.child {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 100px;
+	background: rgba(#909, 0.3);
+}

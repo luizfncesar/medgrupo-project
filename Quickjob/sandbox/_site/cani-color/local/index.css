@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.background {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+  cursor: pointer; }
+
+.foreground {
+  display: block;
+  font-size: 200px;
+  font-family: "Acropolis A", "Acropolis B";
+  margin: 50vh 30vh;
+  cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */
