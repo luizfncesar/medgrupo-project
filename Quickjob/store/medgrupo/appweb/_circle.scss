@@ -9,6 +9,11 @@
     border-radius: 100%;
     // margin: 0 10px;
 
+    @media (max-width: $width-tablet) {
+		background-image: none;
+		background: transparent;
+	}
+
 	.progress__area {
 		position: relative;
 		display: block;
@@ -24,6 +29,13 @@
 
 	.progress__pie {
 	  @include size($default-size, $default-size);
+
+		@media (max-width: $width-tablet) {
+			@include size($tablet-size, $tablet-size);
+		}
+
+
+
 	  // float: left;
 	  margin: 10px;
 	  position: relative;
@@ -115,6 +127,11 @@
 	.progress__pie--solid {
 		&.progress__pie-0 {
 			background-image: radial-gradient(#373432, #373432, #161616);
+
+			@media (max-width: $width-tablet) {
+				background-image: radial-gradient(#06181b, #06181b, #051313);
+			}
+
 			&:before {
 				background: transparent;
 			}
@@ -126,6 +143,11 @@
 
 		.progress__work {
 			line-height: 2;
+
+			@media (max-width: $width-tablet) {
+				line-height: 3.3;
+				color: #5c6363;
+			}
 		}
 	}
 }

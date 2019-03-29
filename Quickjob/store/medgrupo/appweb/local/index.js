@@ -1,8 +1,8 @@
-var mobileNav = document.querySelector('.header__brand');
-var toggle = document.querySelector('.menu--medgrupo');
-mobileNav.onclick = function () {
-  toggleClass(this, 'menu--disabled');
-  toggleClass(toggle, 'menu--active');
-};
+$(function () {
+  $('.mobile--click').click(function () {
+    $('.mobile--click').toggleClass('mobile--active');
+    $('.landing--area--header').toggleClass('landing--area--active');
+  });
+});
 
 /*# sourceMappingURL=index.js.map */
