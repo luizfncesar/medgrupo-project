@@ -202,10 +202,16 @@
 		position: relative;
 		padding: 0;
 		background: rgba(0,6,13, 0.4);
+		text-align: center;
+
+		@media (max-width: $width-tablet) {
+			background: #00060d;
+		}
 	}
 
 	.menu__title {
 		position: relative;
+		// display: inline-block;
 		@extend %partner__text;
 		color: #fff;
 		font-weight: 600;
@@ -213,6 +219,22 @@
 		background: #00060d;
 		text-transform: uppercase;
 		padding: 10px 0;
+	}
+
+	.menu__news {
+		position: absolute;
+		display: block;
+		width: 42px;
+		height: 42px;
+		right: 5%;
+		top: 0;
+		font-size: 0;
+		text-indent: -9999;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 26px; 
+		background-image: url('media/icon/notificacao.svg');
 	}
 
 	.menu__list {
@@ -245,7 +267,7 @@
 		position: relative;
 		display: inline-block;
 		color: #fff;
-		padding: 4% 10%;
+		padding: 10%;
 
 		&:before {
 			content: '';

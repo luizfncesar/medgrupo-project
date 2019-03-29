@@ -119,5 +119,13 @@
 				background: transparent;
 			}
 		}
+
+		.progress__value {
+			display: none;
+		}
+
+		.progress__work {
+			line-height: 2;
+		}
 	}
 }

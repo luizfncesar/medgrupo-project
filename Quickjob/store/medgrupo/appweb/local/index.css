@@ -52,9 +52,9 @@ body {
   background: #fff; }
   @media (max-width: 768px) {
     .landing--medcurso .landing--area--header {
-      position: absolute;
+      position: fixed;
       width: 100%;
-      top: 10%;
+      top: 95%;
       z-index: 1; } }
 
 .landing--medcurso .landing--area--content {
@@ -63,7 +63,10 @@ body {
   width: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  background-image: url("media/bg/bg.jpg"); }
+  background: #002230; }
+  @media (max-width: 768px) {
+    .landing--medcurso .landing--area--content {
+      padding-bottom: 14%; } }
 
 .header--medgrupo {
   position: relative;
@@ -290,7 +293,11 @@ body {
 .menu--medcurso .menu__area {
   position: relative;
   padding: 0;
-  background: rgba(0, 6, 13, 0.4); }
+  background: rgba(0, 6, 13, 0.4);
+  text-align: center; }
+  @media (max-width: 768px) {
+    .menu--medcurso .menu__area {
+      background: #00060d; } }
 
 .menu--medcurso .menu__title {
   position: relative;
@@ -300,6 +307,20 @@ body {
   background: #00060d;
   text-transform: uppercase;
   padding: 10px 0; }
+
+.menu--medcurso .menu__news {
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 42px;
+  right: 5%;
+  top: 0;
+  font-size: 0;
+  text-indent: -9999;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+  background-image: url("media/icon/notificacao.svg"); }
 
 .menu--medcurso .menu__list {
   -ms-flex-direction: row;
@@ -327,7 +348,7 @@ body {
   position: relative;
   display: inline-block;
   color: #fff;
-  padding: 4% 10%; }
+  padding: 10%; }
   .menu--medcurso .menu__handle:before {
     content: '';
     position: absolute;
@@ -444,6 +465,12 @@ body {
   .progress--closed .progress__pie--solid.progress__pie-0:before {
     background: transparent; }
 
+.progress--closed .progress__pie--solid .progress__value {
+  display: none; }
+
+.progress--closed .progress__pie--solid .progress__work {
+  line-height: 2; }
+
 .front--class {
   -ms-flex-direction: row;
   flex-direction: row;
@@ -466,6 +493,9 @@ body {
     @media (max-width: 870px) {
       .front--class .front__area {
         width: 32.4375%; } }
+    @media (max-width: 470px) {
+      .front--class .front__area {
+        width: 49.4375%; } }
   .front--class .front__content {
     -ms-flex-direction: row;
     flex-direction: row;
