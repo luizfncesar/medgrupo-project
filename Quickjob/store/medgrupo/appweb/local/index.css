@@ -44,7 +44,7 @@ body {
   height: 1200px;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  background: blue; }
+  background-image: url("media/bg/bg.jpg"); }
 
 h1 {
   margin: 0; }
@@ -60,6 +60,10 @@ h1 {
 
 .menu--medgrupo .menu__area {
   padding: 22px 0 0 0; }
+
+.menu--medgrupo .menu__title {
+  color: #000;
+  font-weight: 600; }
 
 .menu--medgrupo .menu__list {
   position: relative;
@@ -92,6 +96,40 @@ h1 {
     width: 30px;
     height: 30px;
     margin-right: 14px;
-    background: #c3c3c3; }
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.menu--medgrupo .menu__handle--101:before {
+  background-image: url("media/icon/icon_newmain.svg"); }
+
+.menu--medgrupo .menu__handle--102:before {
+  background-image: url("media/icon/icon_newslideaula.svg"); }
+
+.menu--medgrupo .menu__handle--103:before {
+  background-image: url("media/icon/icon_newacademicas.svg"); }
+
+.menu--medgrupo .menu__handle--104:before {
+  background-image: url("media/icon/icon_newcontri.svg"); }
+
+.menu--medgrupo .menu__handle--201:before {
+  background-image: url("media/icon/icon_newsimu.svg"); }
+
+.menu--medgrupo .menu__handle--202:before {
+  background-image: url("media/icon/icon_newintegra.svg"); }
+
+.menu--medgrupo .menu__handle--203:before {
+  background-image: url("media/icon/icon_newmonta.svg"); }
+
+.menu--medgrupo .menu__handle--301:before {
+  background-image: url("media/icon/icon_newsfinan.jpg");
+  background-size: 100%; }
+
+.menu--medgrupo .menu__handle--302:before {
+  background-image: url("media/icon/icon_newsnotas.jpg");
+  background-size: 100%; }
+
+.menu--medgrupo .menu__handle--303:before {
+  background-image: url("media/icon/icon_newsportador.jpg");
+  background-size: 100%; }
 
 /*# sourceMappingURL=index.css.map */

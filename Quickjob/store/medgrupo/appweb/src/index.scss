@@ -41,6 +41,8 @@ body {
 
 	.menu__title {
 		@extend %partner__text;
+		color: #000;
+		font-weight: 600;
 	}
 
 	.menu__list {
@@ -81,7 +83,44 @@ body {
 			height: 30px;
 
 			margin-right: 14px; 
-			background: #c3c3c3;
+			// background: #c3c3c3;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			// background: url('media/icon/icon_newacademicas.svg') no-repeat center;
+
 		}
+	}
+	
+	// Main
+	.menu__handle--101 { &:before { background-image: url('media/icon/icon_newmain.svg'); } }
+	.menu__handle--102 { &:before { background-image: url('media/icon/icon_newslideaula.svg'); } }
+	.menu__handle--103 { &:before { background-image: url('media/icon/icon_newacademicas.svg'); } }
+	.menu__handle--104 { &:before { background-image: url('media/icon/icon_newcontri.svg'); } }
+
+	// Training Area
+	.menu__handle--201 { &:before { background-image: url('media/icon/icon_newsimu.svg'); } }
+	.menu__handle--202 { &:before { background-image: url('media/icon/icon_newintegra.svg'); } }
+	.menu__handle--203 { &:before { background-image: url('media/icon/icon_newmonta.svg'); } }
+
+	//Administrative
+	.menu__handle--301 { 
+		&:before { 
+			background-image: url('media/icon/icon_newsfinan.jpg');
+			background-size: 100%; 
+		} 
+	}
+
+	.menu__handle--302 { 
+		&:before { 
+			background-image: url('media/icon/icon_newsnotas.jpg'); 
+			background-size: 100%; 
+		} 
+	}
+	.menu__handle--303 { 
+		&:before { 
+			background-image: url('media/icon/icon_newsportador.jpg'); 
+			background-size: 100%; 
+		} 
 	}
 }
