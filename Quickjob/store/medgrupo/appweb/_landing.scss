@@ -1,3 +1,5 @@
+@import '../variable';
+
 .landing--medcurso {
 	@extend %partner__area;
 
@@ -10,14 +12,21 @@
 		display: block;
 		min-width: 252px;
 		flex-basis: 252px;
-		// background: red; 
+		background: #fff; 
+
+		@media (max-width: $width-tablet) {
+			position: absolute;
+			width: 100%;
+			top: 10%;
+			z-index: 1;
+		}
 	}
 
 	.landing--area--content {
 		position: relative;
 		display: block;
 		width: 100%;
-		height: 1200px;
+		// height: 1200px;
 		flex-basis: 100%;
 		// background: blue; 
 

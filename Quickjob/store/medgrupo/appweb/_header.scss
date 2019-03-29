@@ -1,11 +1,47 @@
+@import '../variable';
+
 .header--medgrupo {
 	position: relative;
 	padding: 22px 0 0 22px;
+
+	@media (max-width: $width-tablet) {
+		padding: 0;
+	}
 }
 
 
 .header--medgrupo {
-	.header--brand {
+
+	@media (max-width: $width-tablet) {
+		text-align: center;
+		padding-bottom: 14%;
+	}
+
+	.header__block {
+		position: relative;
+	}
+
+	@media (max-width: $width-tablet) {
+		.header__block:before {
+			content: '';
+			position: absolute;
+			display: block;
+
+			width: 150px;
+			height: 38px;
+
+			top: -36px;
+			left: 5px;
+			right: 0;
+			margin: auto;
+
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url('media/bg/bg_mobile_brand');
+		}
+	}
+
+	.header__brand {
 		position: relative;
 		width: 42px;
 		height: 42px;
@@ -19,6 +55,11 @@
 		background-position: center;
 		background-size: 26px; 
 		background-image: url('media/icon/newmenu_cross.svg');
+
+		@media (max-width: $width-tablet) {
+			top: -30px;
+			margin: 0 auto;
+		}
 	}
 
 	.header__text {
@@ -26,6 +67,11 @@
 		color: #a1a2a3;
 		line-height: 1.5;
 		font-weight: 600;
+
+		@media (max-width: $width-tablet) {
+			display: inline-block;
+			font-size: 18px;
+		}
 
 	}
 }

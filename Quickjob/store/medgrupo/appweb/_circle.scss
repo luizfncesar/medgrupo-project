@@ -1,0 +1,123 @@
+@import '../variable';
+@import '../mixins';
+
+
+.progress--circle {
+	position: relative;
+	background: #383533;
+	background-image: linear-gradient(0deg, #373432, #161616);
+    border-radius: 100%;
+    // margin: 0 10px;
+
+	.progress__area {
+		position: relative;
+		display: block;
+		width: 100%;
+		font-size: 10em;
+
+		&:after {
+			clear: both;
+			content: '';
+			display: table;
+		}
+	}
+
+	.progress__pie {
+	  @include size($default-size, $default-size);
+	  // float: left;
+	  margin: 10px;
+	  position: relative;
+	  
+	  &:nth-child(3n + 1) {
+	    clear: both;
+	  }
+
+	  .progress__label {
+	  	font-family: $font-family;
+	    background: $bg-color;
+	    border-radius: 50%;
+	    bottom: $label-font-size-redo / 10;
+	    color: #ecf0f1;
+	    cursor: default;
+	    display: block;
+	    font-size: $label-font-size;
+	    left: $label-font-size-redo / 10;
+	    line-height: $label-font-size-redo * .70;
+	    position: absolute;
+	    right: $label-font-size-redo / 10;
+	    text-align: center;
+	    top: $label-font-size-redo / 10;
+	  }
+	}
+
+	.progress__pie--solid {
+		border-radius: 50%;
+		overflow: hidden;
+
+		&:before {
+		border-radius: 0 100% 100% 0 / 50%;
+		content: '';
+		display: block;
+		height: 100%;
+		margin-left: 50%;
+		transform-origin: left;
+		}
+
+		.progress__label {
+		background: transparent;
+		}
+
+		.progress__inner {
+			position: absolute;
+			top: 9px;
+			left: 0px;
+			right: 0;
+			margin: auto;
+			text-align: center;
+		}
+	
+		.progress__work,
+		.progress__value {
+			@extend %partner__text;
+			position: relative;
+			display: block;
+			text-align: center;
+			font-size: 14px;
+			line-height: 1;
+		}
+
+		.progress__value {
+			font-size: 12px;
+		}
+
+		&.progress__pie-0 {
+			@include draw-progress--solid(0, #28aaca, $bg-color);
+		}
+
+		&.progress__pie-65 {
+			@include draw-progress--solid(65, #28aaca, $bg-color);
+		}
+
+		&.progress__pie-88 {
+			@include draw-progress--solid(88, #28aaca, $bg-color);
+		}
+
+		&.progress__pie-100 {
+			@include draw-progress--solid(100, #28aaca, $bg-color);
+		}
+	}
+
+	.progress__pie-100 .progress__work,
+	.progress__pie-100 .progress__value { color: #fff; }
+}
+
+.progress--closed {
+	.progress__pie--solid {
+		&.progress__pie-0 {
+			background-image: radial-gradient(#373432, #373432, #161616);
+			&:before {
+				background: transparent;
+			}
+		}
+	}
+}

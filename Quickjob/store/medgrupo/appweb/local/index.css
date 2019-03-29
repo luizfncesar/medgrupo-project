@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
 body {
+  width: 100%;
   margin: 0px;
   padding: 0px;
   background: #fff; }
 
-.landing--medcurso {
+.landing--medcurso, .menu--medgrupo .menu__list, .menu--medcurso .menu__list, .front--class, .front--class .front__area, .front--class .front__content {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +27,9 @@ body {
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.header--medgrupo .header__text, .menu--medgrupo .menu__title, .menu--medgrupo .menu__item {
+.header--medgrupo .header__text, .menu--medgrupo .menu__title, .menu--medgrupo .menu__item, .menu--medcurso .menu__title, .menu--medcurso .menu__item, .progress--circle .progress__pie--solid .progress__work,
+.progress--circle .progress__pie--solid .progress__value, .front--class .book--class .book__week,
+.front--class .book--class .book__day {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -27,7 +40,7 @@ body {
   line-height: 1.8;
   padding: 0;
   margin: 0; }
-  .header--medgrupo .header__text a, .menu--medgrupo .menu__title a, .menu--medgrupo .menu__item a {
+  .header--medgrupo .header__text a, .menu--medgrupo .menu__title a, .menu--medgrupo .menu__item a, .menu--medcurso .menu__title a, .menu--medcurso .menu__item a, .progress--circle .progress__pie--solid .progress__work a, .progress--circle .progress__pie--solid .progress__value a, .front--class .book--class .book__week a, .front--class .book--class .book__day a {
     text-decoration: none; }
 
 .landing--medcurso .landing--area--header {
@@ -35,13 +48,19 @@ body {
   display: block;
   min-width: 252px;
   -ms-flex-preferred-size: 252px;
-  flex-basis: 252px; }
+  flex-basis: 252px;
+  background: #fff; }
+  @media (max-width: 768px) {
+    .landing--medcurso .landing--area--header {
+      position: absolute;
+      width: 100%;
+      top: 10%;
+      z-index: 1; } }
 
 .landing--medcurso .landing--area--content {
   position: relative;
   display: block;
   width: 100%;
-  height: 1200px;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   background-image: url("media/bg/bg.jpg"); }
@@ -49,8 +68,34 @@ body {
 .header--medgrupo {
   position: relative;
   padding: 22px 0 0 22px; }
+  @media (max-width: 768px) {
+    .header--medgrupo {
+      padding: 0; } }
 
-.header--medgrupo .header--brand {
+@media (max-width: 768px) {
+  .header--medgrupo {
+    text-align: center;
+    padding-bottom: 14%; } }
+
+.header--medgrupo .header__block {
+  position: relative; }
+
+@media (max-width: 768px) {
+  .header--medgrupo .header__block:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 38px;
+    top: -36px;
+    left: 5px;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("media/bg/bg_mobile_brand"); } }
+
+.header--medgrupo .header__brand {
   position: relative;
   width: 42px;
   height: 42px;
@@ -63,49 +108,71 @@ body {
   background-position: center;
   background-size: 26px;
   background-image: url("media/icon/newmenu_cross.svg"); }
+  @media (max-width: 768px) {
+    .header--medgrupo .header__brand {
+      top: -30px;
+      margin: 0 auto; } }
 
 .header--medgrupo .header__text {
   color: #a1a2a3;
   line-height: 1.5;
   font-weight: 600; }
-
-h1 {
-  margin: 0; }
-
-.header--medgrupo {
-  position: relative;
-  padding: 22px 0 0 22px; }
-
-.header--medgrupo .header--brand {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  font-size: 0;
-  text-indent: -9999;
-  border-radius: 100%;
-  margin-bottom: 22px;
-  background: #d58650;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px;
-  background-image: url("media/icon/newmenu_cross.svg"); }
-
-.header--medgrupo .header__text {
-  color: #a1a2a3;
-  line-height: 1.5;
-  font-weight: 600; }
+  @media (max-width: 768px) {
+    .header--medgrupo .header__text {
+      display: inline-block;
+      font-size: 18px; } }
 
 .menu--medgrupo .menu__area {
+  position: relative;
   padding: 22px 0 0 0; }
 
+@media (max-width: 768px) {
+  .menu--medgrupo .menu__area--level-3 {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .menu--medgrupo .menu__area:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 36px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 536px;
+    width: 90%;
+    height: 0;
+    border-bottom: 1px solid #c3c3c3; } }
+
 .menu--medgrupo .menu__title {
+  position: relative;
   color: #000;
-  font-weight: 600; }
+  font-weight: 600;
+  z-index: 1; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__title {
+      display: inline-block;
+      text-align: center;
+      background: #fff;
+      padding: 0 12px;
+      font-size: 18px; } }
 
 .menu--medgrupo .menu__list {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   position: relative;
   margin: 0;
   padding: 0 0 22px 10px; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__list {
+      max-width: 574px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
   .menu--medgrupo .menu__list:after {
     content: '';
     position: absolute;
@@ -115,16 +182,57 @@ h1 {
     width: 80%;
     height: 0;
     border-bottom: 1px solid #c3c3c3; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__list:after {
+      display: none; } }
 
 .menu--medgrupo .menu__item {
+  position: relative;
   list-style: none;
   padding: 12px 0 0 0;
-  font-size: 14px; }
+  font-size: 14px;
+  width: 100%;
+  flex-bases: 100%; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__item {
+      width: 33.3333333333%;
+      flex-bases: 33.3333333333%;
+      font-size: 16px;
+      padding: 0; } }
+  @media (max-width: 326px) {
+    .menu--medgrupo .menu__item {
+      font-size: 14px; } }
+
+@media (max-width: 768px) {
+  .menu--medgrupo .menu__item:not(:last-of-type):before {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 76%;
+    border-left: 1px solid #c3c3c3; }
+  .menu--medgrupo .menu__item:nth-child(3n+3):before {
+    display: none; } }
+
+.menu--medgrupo .menu__item--102 {
+  display: none; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__item--102 {
+      display: block; } }
 
 .menu--medgrupo .menu__handle {
   position: relative;
   display: inline-block;
   color: #000; }
+  @media (max-width: 768px) {
+    .menu--medgrupo .menu__handle {
+      display: block;
+      min-width: 100px;
+      min-height: 100px;
+      text-align: center;
+      padding: 6%; } }
   .menu--medgrupo .menu__handle:before {
     content: '';
     position: relative;
@@ -135,6 +243,13 @@ h1 {
     margin-right: 14px;
     background-repeat: no-repeat;
     background-position: center; }
+    @media (max-width: 768px) {
+      .menu--medgrupo .menu__handle:before {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 0 auto;
+        padding: 16px 0; } }
 
 .menu--medgrupo .menu__handle--101:before {
   background-image: url("media/icon/icon_newmain.svg"); }
@@ -171,5 +286,225 @@ h1 {
 .menu--medgrupo .menu__handle--303:before {
   background-image: url("media/icon/icon_newsportador.jpg");
   background-size: 100%; }
+
+.menu--medcurso .menu__area {
+  position: relative;
+  padding: 0;
+  background: rgba(0, 6, 13, 0.4); }
+
+.menu--medcurso .menu__title {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  background: #00060d;
+  text-transform: uppercase;
+  padding: 10px 0; }
+
+.menu--medcurso .menu__list {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  position: relative;
+  padding: 0;
+  max-width: 640px;
+  margin: 0 auto; }
+
+.menu--medcurso .menu__item {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  font-size: 14px;
+  width: 25%;
+  flex-bases: 25%; }
+  @media (max-width: 326px) {
+    .menu--medcurso .menu__item {
+      font-size: 14px; } }
+
+.menu--medcurso .menu__handle {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 4% 10%; }
+  .menu--medcurso .menu__handle:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid #2cccf1;
+    transition: 0.3s; }
+  .menu--medcurso .menu__handle:hover:before {
+    width: 100%;
+    transition: 0.3s; }
+  @media (max-width: 768px) {
+    .menu--medcurso .menu__handle {
+      display: block; } }
+
+.progress--circle {
+  position: relative;
+  background: #383533;
+  background-image: linear-gradient(0deg, #373432, #161616);
+  border-radius: 100%; }
+  .progress--circle .progress__area {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 10em; }
+    .progress--circle .progress__area:after {
+      clear: both;
+      content: '';
+      display: table; }
+  .progress--circle .progress__pie {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: relative; }
+    .progress--circle .progress__pie:nth-child(3n + 1) {
+      clear: both; }
+    .progress--circle .progress__pie .progress__label {
+      font-family: "Roboto", sans-serif;
+      background: #fff;
+      border-radius: 50%;
+      bottom: 20px;
+      color: #ecf0f1;
+      cursor: default;
+      display: block;
+      font-size: 16px;
+      left: 20px;
+      line-height: 140px;
+      position: absolute;
+      right: 20px;
+      text-align: center;
+      top: 20px; }
+  .progress--circle .progress__pie--solid {
+    border-radius: 50%;
+    overflow: hidden; }
+    .progress--circle .progress__pie--solid:before {
+      border-radius: 0 100% 100% 0 / 50%;
+      content: '';
+      display: block;
+      height: 100%;
+      margin-left: 50%;
+      -ms-transform-origin: left;
+      transform-origin: left; }
+    .progress--circle .progress__pie--solid .progress__label {
+      background: transparent; }
+    .progress--circle .progress__pie--solid .progress__inner {
+      position: absolute;
+      top: 9px;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      text-align: center; }
+    .progress--circle .progress__pie--solid .progress__work,
+    .progress--circle .progress__pie--solid .progress__value {
+      position: relative;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1; }
+    .progress--circle .progress__pie--solid .progress__value {
+      font-size: 12px; }
+    .progress--circle .progress__pie--solid.progress__pie-0 {
+      background: linear-gradient(to right, #28aaca 50%, #fff 50%); }
+      .progress--circle .progress__pie--solid.progress__pie-0:before {
+        background: #fff;
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg); }
+    .progress--circle .progress__pie--solid.progress__pie-65 {
+      background: linear-gradient(to right, #28aaca 50%, #fff 50%); }
+      .progress--circle .progress__pie--solid.progress__pie-65:before {
+        background: #28aaca;
+        -ms-transform: rotate(126deg);
+        transform: rotate(126deg); }
+    .progress--circle .progress__pie--solid.progress__pie-88 {
+      background: linear-gradient(to right, #28aaca 50%, #fff 50%); }
+      .progress--circle .progress__pie--solid.progress__pie-88:before {
+        background: #28aaca;
+        -ms-transform: rotate(43.2deg);
+        transform: rotate(43.2deg); }
+    .progress--circle .progress__pie--solid.progress__pie-100 {
+      background: linear-gradient(to right, #28aaca 50%, #fff 50%); }
+      .progress--circle .progress__pie--solid.progress__pie-100:before {
+        background: #28aaca;
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
+  .progress--circle .progress__pie-100 .progress__work,
+  .progress--circle .progress__pie-100 .progress__value {
+    color: #fff; }
+
+.progress--closed .progress__pie--solid.progress__pie-0 {
+  background-image: radial-gradient(#373432, #373432, #161616); }
+  .progress--closed .progress__pie--solid.progress__pie-0:before {
+    background: transparent; }
+
+.front--class {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto; }
+  .front--class .front__area {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    width: 25%;
+    padding: 0;
+    margin: 4% 0 0; }
+    @media (max-width: 870px) {
+      .front--class .front__area {
+        width: 32.4375%; } }
+  .front--class .front__content {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    position: relative;
+    padding: 0;
+    margin: 20px 0; }
+    .front--class .front__content:before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: #383533;
+      background-image: linear-gradient(0deg, #373432, #161616); }
+  .front--class .book--class {
+    position: absolute;
+    top: -24px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff; }
+    .front--class .book--class .book__week,
+    .front--class .book--class .book__day {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      font-size: 14px; }
+    .front--class .book--class .book__week {
+      font-size: 0; }
+      .front--class .book--class .book__week:before {
+        content: 'SEM';
+        display: inline-block;
+        font-size: 14px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
 
 
-// Font Family
+// -- font family
 $font-family: 'Roboto', sans-serif;
 
 
-// Color
+// -- color
 $background: #fff;
+
+
+// -- media
+$width-max-desktop: 1280px;
+$width-min-desktop: 1024px;
+$width-tablet: 768px;
+$width-mobile: 326px;
+
+
+// -- vars
+$bg-color: #fff;
+$default-size: 50px;
+$label-font-size: 16px;
+$label-font-size-redo: $default-size * 4;

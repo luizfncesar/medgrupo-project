@@ -1,19 +1,66 @@
+@import '../variable';
+
 .menu--medgrupo {
 
 	.menu__area {
+		position: relative;
 		padding: 22px 0 0 0;
 	}
 
+	.menu__area--level-3 {
+		@media (max-width: $width-tablet) {
+			display: none;
+		}
+	}
+
+	@media (max-width: $width-tablet) {
+		.menu__area:after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 36px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			max-width: 536px;
+			width: 90%;
+			height: 0;
+			border-bottom: 1px solid #c3c3c3;
+		}
+	}
+
 	.menu__title {
+		position: relative;
 		@extend %partner__text;
 		color: #000;
 		font-weight: 600;
+		z-index: 1;
+
+		@media (max-width: $width-tablet) {
+			display: inline-block;
+			text-align: center;
+			background: #fff;
+			padding: 0 12px;
+			font-size: 18px;
+
+		}
 	}
 
 	.menu__list {
+		@extend %partner__area;	
+		flex-direction: column;
+		flex-flow: row wrap;
 		position: relative;
 		margin: 0;
 		padding: 0 0 22px 10px;
+
+		@media (max-width: $width-tablet) {
+			max-width: 574px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			flex-direction: row;
+		}
 
 		&:after {
 			content: '';
@@ -25,19 +72,71 @@
 			height: 0;
 			border-bottom: 1px solid #c3c3c3;
 		}
+
+		@media (max-width: $width-tablet) {
+			&:after {
+				display: none;
+			}
+		}
 	}
 
 	.menu__item {
+		position: relative;
 		@extend %partner__text;
 		list-style: none;
 		padding: 12px 0 0 0;
 		font-size: 14px;
+		width: 100%;
+		flex-bases: 100%;
+
+		@media (max-width: $width-tablet) {
+			width: 33.3333333333%;
+			flex-bases: 33.3333333333%;
+
+			font-size: 16px;
+			padding: 0;
+		}
+
+		@media (max-width: $width-mobile) {
+			font-size: 14px;
+		}
+	}
+
+	@media (max-width: $width-tablet) {
+		.menu__item:not(:last-of-type):before {
+			content: '';
+			position: absolute;
+			display: block;
+			right: 0;
+			bottom: 0;
+
+			width: 0;
+			height: 76%;
+			border-left: 1px solid #c3c3c3;
+		}
+
+		.menu__item:nth-child(3n+3):before {
+			display: none;
+		}
+	}
+
+	.menu__item--102 { 
+		display: none;
+		@media (max-width: $width-tablet) {	display: block; }
 	}
 
 	.menu__handle {
 		position: relative;
 		display: inline-block;
 		color: #000;
+
+		@media (max-width: $width-tablet) {
+			display: block;
+			min-width: 100px;
+			min-height: 100px;
+			text-align: center;
+			padding: 6%;
+		}
 
 		&:before {
 			content: '';
@@ -52,7 +151,13 @@
 			background-repeat: no-repeat;
 			background-position: center;
 
-			// background: url('media/icon/icon_newacademicas.svg') no-repeat center;
+			@media (max-width: $width-tablet) {
+				display: block;
+				width: 36px;
+				height: 36px;
+				margin: 0 auto;
+				padding: 16px 0;
+			}
 
 		}
 	}
@@ -89,4 +194,84 @@
 			background-size: 100%; 
 		} 
 	}
+}
+
+.menu--medcurso {
+
+	.menu__area {
+		position: relative;
+		padding: 0;
+		background: rgba(0,6,13, 0.4);
+	}
+
+	.menu__title {
+		position: relative;
+		@extend %partner__text;
+		color: #fff;
+		font-weight: 600;
+		text-align: center;
+		background: #00060d;
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+
+	.menu__list {
+		@extend %partner__area;	
+		flex-direction: row;
+		flex-flow: row nowrap;
+		position: relative;
+		padding: 0;
+
+		max-width: 640px;
+   		margin: 0 auto;
+	}
+
+	.menu__item {
+		position: relative;
+		@extend %partner__text;
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		font-size: 14px;
+		width: 25%;
+		flex-bases: 25%;
+
+		@media (max-width: $width-mobile) {
+			font-size: 14px;
+		}
+	}
+
+	.menu__handle {
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		padding: 4% 10%;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			margin: 0 auto;
+
+			width: 0;
+			height: 0;
+
+			border-bottom: 1px solid #2cccf1;
+			transition: 0.3s;
+
+		}
+
+		&:hover:before {
+			width: 100%;
+			transition: 0.3s;
+		}
+
+		@media (max-width: $width-tablet) {
+			display: block;
+		}
+	}
+
 }
