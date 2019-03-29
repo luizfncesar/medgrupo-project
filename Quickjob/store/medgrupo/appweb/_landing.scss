@@ -1,4 +1,4 @@
-@import '../variable';
+
 
 .landing--medcurso {
 	@extend %partner__area;
@@ -29,7 +29,7 @@
 			top: 10%;
 			z-index: 1;
 			transition: .3s;
-			
+
 		}
 	}
 	
@@ -46,6 +46,11 @@
 
 		@media (max-width: $width-tablet) {
 			padding-bottom: 14%;
+			background-image: url('media/bg/bg.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+
 		}
 	}
 
