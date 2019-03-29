@@ -46,6 +46,29 @@ body {
   flex-basis: 100%;
   background-image: url("media/bg/bg.jpg"); }
 
+.header--medgrupo {
+  position: relative;
+  padding: 22px 0 0 22px; }
+
+.header--medgrupo .header--brand {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  font-size: 0;
+  text-indent: -9999;
+  border-radius: 100%;
+  margin-bottom: 22px;
+  background: #d58650;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+  background-image: url("media/icon/newmenu_cross.svg"); }
+
+.header--medgrupo .header__text {
+  color: #a1a2a3;
+  line-height: 1.5;
+  font-weight: 600; }
+
 h1 {
   margin: 0; }
 
@@ -117,12 +140,15 @@ h1 {
   background-image: url("media/icon/icon_newmain.svg"); }
 
 .menu--medgrupo .menu__handle--102:before {
-  background-image: url("media/icon/icon_newslideaula.svg"); }
+  background-image: url("media/icon/icon_newmedcode.svg"); }
 
 .menu--medgrupo .menu__handle--103:before {
-  background-image: url("media/icon/icon_newacademicas.svg"); }
+  background-image: url("media/icon/icon_newslideaula.svg"); }
 
 .menu--medgrupo .menu__handle--104:before {
+  background-image: url("media/icon/icon_newacademicas.svg"); }
+
+.menu--medgrupo .menu__handle--105:before {
   background-image: url("media/icon/icon_newcontri.svg"); }
 
 .menu--medgrupo .menu__handle--201:before {
