@@ -1,2 +1,33 @@
+h1 {
+  margin: 0; }
+
+body {
+  display: block;
+  margin: 0; }
+
+.landing--medcurso {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .landing--medcurso .landing--area--header {
+    position: relative;
+    display: inline-block;
+    min-width: 252px;
+    -ms-flex-preferred-size: 252px;
+    flex-basis: 252px;
+    background: red; }
+  .landing--medcurso .landing--area--content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    background: blue; }
 
 /*# sourceMappingURL=index.css.map */
