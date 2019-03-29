@@ -21,7 +21,8 @@
 			z-index: 1;
 		}
 	}
-
+	
+	.landing--area--simulated,
 	.landing--area--content {
 		position: relative;
 		display: block;
@@ -35,5 +36,9 @@
 		@media (max-width: $width-tablet) {
 			padding-bottom: 14%;
 		}
+	}
+
+	.landing--area--simulated {
+		background: #353535;
 	}
 }

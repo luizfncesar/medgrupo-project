@@ -1,4 +1,6 @@
 @import '../variable';
+@import '../partner';
+
 
 .menu--medgrupo {
 
@@ -220,7 +222,8 @@
 		text-transform: uppercase;
 		padding: 10px 0;
 	}
-
+	
+	.menu__back,
 	.menu__news {
 		position: absolute;
 		display: block;
@@ -235,6 +238,13 @@
 		background-position: center;
 		background-size: 26px; 
 		background-image: url('media/icon/notificacao.svg');
+	}
+
+	.menu__back {
+		left: 5%;
+		right: 0;
+		background-image: url('media/icon/sair.svg');
+
 	}
 
 	.menu__list {
