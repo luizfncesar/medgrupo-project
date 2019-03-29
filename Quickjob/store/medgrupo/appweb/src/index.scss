@@ -16,11 +16,27 @@ body {
 
 .header--medgrupo {
 	position: relative;
-	padding: 0 0 0 22px;
+	padding: 22px 0 0 22px;
 }
 
 
 .header--medgrupo {
+	.header--brand {
+		position: relative;
+		width: 42px;
+		height: 42px;
+		font-size: 0;
+		text-indent: -9999;
+		border-radius: 100%;
+		margin-bottom: 22px;
+
+		background: #d58650;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 26px; 
+		background-image: url('media/icon/newmenu_cross.svg');
+	}
+
 	.header__text {
 		@extend %partner__text;
 		color: #a1a2a3;
