@@ -20,3 +20,23 @@
 	max-width: none;
 	height: 100%;
 }
+
+
+%partner__text {
+	font-family: $font-family;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: default;
+	color: #000;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-align: left;
+	line-height: 1.8;
+
+	padding: 0;
+	margin: 0;
+
+	a {
+		text-decoration: none;
+	}
+}

@@ -15,8 +15,63 @@ body {
 
 
 .header--medgrupo {
+	position: relative;
+	padding: 0 0 0 22px;
+    // top: 6%;
+    // left: 2%;
+}
 
-	.menu--medgrupo {
 
+
+
+.menu--medgrupo {
+
+	.menu__area {
+		padding: 22px 0 0 0;
+	}
+
+	.menu__title {
+		@extend %partner__text;
+	}
+
+	.menu__list {
+		position: relative;
+		margin: 0;
+		padding: 0 0 22px 20px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			left: 0;
+			bottom: 0;
+			width: 80%;
+			height: 0;
+			border-bottom: 1px solid #c3c3c3;
+		}
+	}
+
+	.menu__item {
+		@extend %partner__text;
+		list-style: none;
+		padding: 22px 0 0 0;
+		font-size: 14px;
+	}
+
+	.menu__handle {
+		position: relative;
+		display: inline-block;
+		color: #000;
+
+		&:before {
+			content: '';
+			position: relative;
+			display: inline-block;
+			// left: 0;
+			// bottom: 0;
+			width: 25px;
+			height: 25px;
+			background: #c3c3c3;
+		}
 	}
 }
