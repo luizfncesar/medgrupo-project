@@ -1,0 +1,22 @@
+@import "../variable";
+
+%partner__default {
+	margin: 0px;
+	padding: 0px;
+	background: $background;
+}
+
+%partner__area {
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+%partner__media {
+	display: block;
+	width: auto;
+	max-width: none;
+	height: 100%;
+}

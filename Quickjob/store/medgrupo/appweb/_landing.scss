@@ -1,0 +1,23 @@
+.landing--medcurso {
+	@extend %partner__area;
+
+	.landing--area {
+
+	}
+
+	.landing--area--header {
+		position: relative;
+		display: inline-block;
+		min-width: 252px;
+		flex-basis: 252px;
+		background: red; 
+	}
+
+	.landing--area--content {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		flex-basis: 100%;
+		background: blue; 
+	}
+}

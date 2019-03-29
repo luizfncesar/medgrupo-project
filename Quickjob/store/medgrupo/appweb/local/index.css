@@ -1,9 +1,9 @@
-h1 {
-  margin: 0; }
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 body {
-  display: block;
-  margin: 0; }
+  margin: 0px;
+  padding: 0px;
+  background: #fff; }
 
 .landing--medcurso {
   position: relative;
@@ -15,19 +15,24 @@ body {
   justify-content: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
-  .landing--medcurso .landing--area--header {
-    position: relative;
-    display: inline-block;
-    min-width: 252px;
-    -ms-flex-preferred-size: 252px;
-    flex-basis: 252px;
-    background: red; }
-  .landing--medcurso .landing--area--content {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    background: blue; }
+
+.landing--medcurso .landing--area--header {
+  position: relative;
+  display: inline-block;
+  min-width: 252px;
+  -ms-flex-preferred-size: 252px;
+  flex-basis: 252px;
+  background: red; }
+
+.landing--medcurso .landing--area--content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  background: blue; }
+
+h1 {
+  margin: 0; }
 
 /*# sourceMappingURL=index.css.map */
