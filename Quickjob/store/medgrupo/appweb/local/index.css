@@ -16,19 +16,18 @@ body {
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.menu--medgrupo .menu__title, .menu--medgrupo .menu__item {
+.header--medgrupo .header__text, .menu--medgrupo .menu__title, .menu--medgrupo .menu__item {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: default;
-  color: #000;
-  text-transform: capitalize;
+  color: #121212;
   text-decoration: none;
   text-align: left;
   line-height: 1.8;
   padding: 0;
   margin: 0; }
-  .menu--medgrupo .menu__title a, .menu--medgrupo .menu__item a {
+  .header--medgrupo .header__text a, .menu--medgrupo .menu__title a, .menu--medgrupo .menu__item a {
     text-decoration: none; }
 
 .landing--medcurso .landing--area--header {
@@ -54,13 +53,18 @@ h1 {
   position: relative;
   padding: 0 0 0 22px; }
 
+.header--medgrupo .header__text {
+  color: #a1a2a3;
+  line-height: 1.5;
+  font-weight: 600; }
+
 .menu--medgrupo .menu__area {
   padding: 22px 0 0 0; }
 
 .menu--medgrupo .menu__list {
   position: relative;
   margin: 0;
-  padding: 0 0 22px 20px; }
+  padding: 0 0 22px 10px; }
   .menu--medgrupo .menu__list:after {
     content: '';
     position: absolute;
@@ -73,7 +77,7 @@ h1 {
 
 .menu--medgrupo .menu__item {
   list-style: none;
-  padding: 22px 0 0 0;
+  padding: 12px 0 0 0;
   font-size: 14px; }
 
 .menu--medgrupo .menu__handle {
@@ -84,8 +88,10 @@ h1 {
     content: '';
     position: relative;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
     background: #c3c3c3; }
 
 /*# sourceMappingURL=index.css.map */
