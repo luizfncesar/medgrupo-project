@@ -1,7 +1,7 @@
 # Projeto MedGrupo
 
 O projeto está visível no Heroku: [MedGrupo - Web](https://medgrupo-web.herokuapp.com/index.html)
-Deixei uma pasta "Local" com os arquivos caso não queira rodar o gulp. 
+* Deixei uma pasta "Local" com os arquivos caso não queira rodar o gulp. 
 
 ### Tarefas
 
